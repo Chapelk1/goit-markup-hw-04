@@ -148,8 +148,11 @@ a {
     ),
     url(../images/bgi-hero.jpg);
   background-repeat: no-repeat;
-  background-size: none;
+  background-size: cover;
   background-position: center;
+  max-width: 1440px;
+  height: 600px;
+  margin: 0 auto;
 
   background-color: var(--color-navy-blue);
 }
@@ -358,20 +361,19 @@ a {
   align-items: center;
 
   border-radius: 4px;
-  border: 1px solid var(--color-light-slate);
+  border: 1px solid currentColor;
 
-  fill: var(--color-light-slate);
+  color: var(--color-light-slate);
 }
 .customers-icon {
   width: 104px;
   height: 56px;
 
-  color: currentColor;
+  fill: currentColor;
 }
 
 .customers-link:is(:hover, :focus) {
-  border: 1px solid var(--color-ocean);
-  fill: var(--color-ocean);
+  color: var(--color-ocean);
 }
 /* footer */
 .footer {
@@ -400,7 +402,7 @@ a {
   color: var(--color-cloud);
   display: contents;
 }
-.sec-foot-box > h2 {
+.foot-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -472,7 +474,7 @@ a {
 .examples-work-item {
   flex-basis: calc((100% - 48px) / 3);
 }
-.examples-work-item:is(:hover, :focus) {
+.examples-work-link:is(:hover, :focus) {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
